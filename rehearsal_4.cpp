@@ -1,5 +1,17 @@
 #include <iostream>
+#include<string>
+using namespace std;
 
+string conpress(string N){
+    string c=N;
+    string y="";
+    int i=0;
+    while(i <= N.size()){
+        y=y+c[i];
+        i=i+3;
+    }
+    return y;
+}
 //Write compress() here.
 
 int main()
